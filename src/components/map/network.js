@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Box } from "rebass";
 
-const Network = ({ }) => (
+const Network = ({ onMapClick }) => (
   <Flex mx={-2}>
     <Box width={1} px={2}>
       <svg
@@ -5699,6 +5699,27 @@ const Network = ({ }) => (
             width="60.854168"
             x="-2.6458333"
             y="66.812508"
+          />
+        </g>
+        <g>
+          <rect
+            height="4"
+            id="rect1180"
+            style={{
+              fill: "yellow",
+              fillOpacity: "0.5",
+              stroke: "#000006",
+              strokeWidth: "0.30000001",
+              strokeLinecap: "round",
+              strokeMiterlimit: "4",
+              strokeDasharray: "none",
+              strokeDashoffset: "0",
+              strokeOpacity: "1"
+            }}
+            width="14"
+            x="131"
+            y="63"
+            onClick={() => onMapClick('langstaff')}
           />
         </g>
       </svg>
