@@ -1,9 +1,10 @@
 import React from "react";
 import { Flex, Box } from "rebass";
+import styled from "styled-components";
 
-const Network = ({ onMapClick }) => (
-  <Flex mx={-2}>
-    <Box width={1} px={2}>
+const Network = ({ onMapClick, className }) => (
+  <Flex mx={-2} className={className}>
+    <Box id="networkWrapper" width={1} px={2}>
       <svg
         height="187.95418mm"
         id="svg8"
@@ -5704,22 +5705,39 @@ const Network = ({ onMapClick }) => (
         <g>
           <rect
             height="4"
-            id="rect1180"
-            style={{
-              fill: "yellow",
-              fillOpacity: "0.5",
-              stroke: "#000006",
-              strokeWidth: "0.30000001",
-              strokeLinecap: "round",
-              strokeMiterlimit: "4",
-              strokeDasharray: "none",
-              strokeDashoffset: "0",
-              strokeOpacity: "1"
-            }}
+            className="stationHighlight"
+            id="station-langstaff"
             width="14"
             x="131"
             y="63"
             onClick={() => onMapClick('langstaff')}
+          />
+          <rect
+            className="stationHighlight"
+            height="5"
+            id="station-richmondhill"
+            width="15"
+            x="131"
+            y="56.5"
+            onClick={() => onMapClick('richmondhill')}
+          />
+          <rect
+            className="stationHighlight"
+            height="4"
+            id="station-mountjoy"
+            width="15"
+            x="159"
+            y="48"
+            onClick={() => onMapClick('mountjoy')}
+          />
+          <rect
+            className="stationHighlight"
+            height="4"
+            id="station-stouffville"
+            width="15"
+            x="159"
+            y="43"
+            onClick={() => onMapClick('stouffville')}
           />
         </g>
       </svg>
@@ -5727,4 +5745,15 @@ const Network = ({ onMapClick }) => (
   </Flex>
 );
 
-export default Network;
+export default styled(Network)`
+  .stationHighlight {
+    fill: orange;
+    fill-opacity: 0.25;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  .stationHighlight:hover {
+    fill: green;
+    fill-opacity: 0.25;
+  }
+`;
