@@ -1,6 +1,13 @@
 # Transit Helper
 
-This is an app I intend to use to enabled easy access to some simplified transit schedules.
+This is an app I intend to use to enable easy access to some simplified transit schedules.
+
+## Built with
+
+* Create React App (docs below)
+* Rebass
+* styled-components
+* Images from Unsplash
 
 ## Create React App
 
