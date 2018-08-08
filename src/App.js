@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Provider } from 'rebass';
+import { Provider, Flex, Box } from 'rebass';
 
 import { injectGlobal } from 'styled-components'
 
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/header/header'
+import Footer from './components/footer/footer'
 import Map from './components/map/map'
 
 injectGlobal`
@@ -17,10 +18,26 @@ class App extends Component {
   render() {
     return (
       <Provider>
-        <div className="App">
-          <Header />
-          <Map />
-        </div>
+        <Flex
+          className="App"
+          flexDirection="column"
+        >
+          <Box
+            height={200}
+          >
+            <Header />
+          </Box>
+          <Box
+            width={1}
+          >
+            <Map />
+          </Box>
+          <Box
+            height={50}
+          >
+            <Footer />
+          </Box>
+        </Flex>
       </Provider>
     );
   }
