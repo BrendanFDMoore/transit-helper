@@ -22,9 +22,7 @@ class App extends Component {
           className="App"
           flexDirection="column"
         >
-          <Box
-            height={200}
-          >
+          <Box>
             <Header />
           </Box>
           <Box
@@ -32,12 +30,8 @@ class App extends Component {
           >
             <Map />
           </Box>
-          <Box
-            height={50}
-          >
-            <Footer />
-          </Box>
         </Flex>
+        <Footer />
       </Provider>
     );
   }

@@ -4,11 +4,9 @@ import styled from "styled-components";
 
 const Network = ({ onMapClick, className }) => (
   <Flex mx={-2} className={className}>
-    <Box id="networkWrapper" width={1} px={2}>
+    <Box id="networkWrapper" width={1} px={2} mb={4}>
       <svg
-        height="187.95418mm"
         id="svg8"
-        width="219.70418mm"
         version="1.1"
         viewBox="0 0 219.70418 187.95418"
       >
