@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Box } from "rebass";
 import styled from "styled-components";
+import Station from './station';
 
 const Network = ({ onMapClick, className }) => (
   <Flex mx={-2} className={className}>
@@ -5701,42 +5702,12 @@ const Network = ({ onMapClick, className }) => (
           />
         </g>
         <g>
-          <rect
-            height="4"
-            className="stationHighlight"
-            id="station-langstaff"
-            width="14"
-            x="131"
-            y="63"
-            onClick={() => onMapClick('langstaff')}
-          />
-          <rect
-            className="stationHighlight"
-            height="5"
-            id="station-richmondhill"
-            width="15"
-            x="131"
-            y="56.5"
-            onClick={() => onMapClick('richmondhill')}
-          />
-          <rect
-            className="stationHighlight"
-            height="4"
-            id="station-mountjoy"
-            width="15"
-            x="159"
-            y="48"
-            onClick={() => onMapClick('mountjoy')}
-          />
-          <rect
-            className="stationHighlight"
-            height="4"
-            id="station-stouffville"
-            width="15"
-            x="159"
-            y="43"
-            onClick={() => onMapClick('stouffville')}
-          />
+          <Station stationId="langstaff" onStationClick={onMapClick} />
+          <Station stationId="richmondhill" onStationClick={onMapClick} />
+        </g>
+        <g>
+          <Station stationId="mountjoy" onStationClick={onMapClick} />
+          <Station stationId="stouffville" onStationClick={onMapClick} />
         </g>
       </svg>
     </Box>
