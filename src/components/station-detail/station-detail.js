@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Fixed, Heading, Modal } from "rebass";
+import { Fixed, Heading, Modal, Image } from "rebass";
+import stationConfig from '../map/stationConfig';
 
 const StationDetail = ({ station, onModalClick }) => (
   <div>
@@ -10,8 +11,11 @@ const StationDetail = ({ station, onModalClick }) => (
       left={0}
       onClick={onModalClick}
     />
-    <Modal width={256} onClick={onModalClick} width={0.5} p={5}>
-      <Heading>Station: {station}</Heading>
+    <Modal onClick={onModalClick} p={5}>
+      <Heading>Station: {stationConfig[station].name}</Heading>
+      <Image
+        src={stationConfig[station].miniSchedule}
+      />
     </Modal>
   </div>
 );
