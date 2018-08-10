@@ -5385,6 +5385,7 @@ const Network = ({ onMapClick, className }) => (
             }}
             d="M 3.9687501,73.6625 H 17.727085"
           />
+          {/* Outer box arond network map. */}
           <rect
             height="187.85417"
             id="rect1483"
@@ -5392,7 +5393,7 @@ const Network = ({ onMapClick, className }) => (
               fill: "none",
               fillOpacity: "1",
               stroke: "#000021",
-              strokeWidth: "0.1",
+              strokeWidth: "0",
               strokeLinecap: "round",
               strokeMiterlimit: "4",
               strokeDasharray: "none",
