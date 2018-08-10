@@ -5,6 +5,7 @@ import stouffvilleSchedule from 'assets/71-stouffville/10-stouffville.png';
 
 const stations = {
   langstaff: {
+    code: 'LA',
     rect: {
       x: 131,
       y: 63,
@@ -12,9 +13,11 @@ const stations = {
       height: 4,
     },
     miniSchedule: langstaffSchedule,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table61.pdf',
     name: 'Langstaff',
   },
   richmondhill: {
+    code: '00062',
     rect: {
       x: 131,
       y: 56.5,
@@ -22,9 +25,11 @@ const stations = {
       height: 5,
     },
     miniSchedule: richmondhillSchedule,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table61.pdf',
     name: 'Richmond Hill',
   },
   mountjoy: {
+    code: 'MJ',
     rect: {
       x: 159,
       y: 48,
@@ -32,9 +37,11 @@ const stations = {
       height: 4,
     },
     miniSchedule: mountjoySchedule,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Mount Joy',
   },
   stouffville: {
+    code: 'ST',
     rect: {
       x: 159,
       y: 43,
@@ -42,6 +49,7 @@ const stations = {
       height: 4,
     },
     miniSchedule: stouffvilleSchedule,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Stouffville',
   },
 };
