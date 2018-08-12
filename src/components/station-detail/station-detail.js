@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Fixed, Heading, Modal, Image, Flex, Box, Panel, Link, Text } from "rebass";
 import stationConfig from '../map/stationConfig';
+import ComingSoon from '../coming-soon/coming-soon'
 
 // This page does not work, currently.
 const getDeparturesUrl = stationCode =>
@@ -34,9 +35,13 @@ const StationDetail = ({ station, onModalClick }) => (
           {stationConfig[station].name}
         </Panel.Header>
         <Box p={3}>
-          <Image
-            src={stationConfig[station].miniSchedule}
-          />
+          {
+            stationConfig[station].miniSchedule ? 
+            <Image
+              src={stationConfig[station].miniSchedule}
+            />
+            : <ComingSoon text="Mini schedule" />
+          }
         </Box>
         <Panel.Footer
           color='black'
