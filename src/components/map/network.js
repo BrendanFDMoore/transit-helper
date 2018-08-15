@@ -5639,22 +5639,33 @@ const Network = ({ onMapClick, className }) => (
           />
         </g>
         <g>
-          <Station stationId="oriole" onStationClick={onMapClick} />
-          <Station stationId="oldcummer" onStationClick={onMapClick} />
+          <Station stationId="oriole" onStationClick={onMapClick} unavailable/>
+          <Station stationId="oldcummer" onStationClick={onMapClick} unavailable/>
           <Station stationId="langstaff" onStationClick={onMapClick} />
           <Station stationId="richmondhill" onStationClick={onMapClick} />
-          <Station stationId="gormley" onStationClick={onMapClick} />
+          <Station stationId="gormley" onStationClick={onMapClick} unavailable/>
         </g>
         <g>
-          <Station stationId="kennedy" onStationClick={onMapClick} />
-          <Station stationId="agincourt" onStationClick={onMapClick} />
-          <Station stationId="milliken" onStationClick={onMapClick} />
-          <Station stationId="unionville" onStationClick={onMapClick} />
-          <Station stationId="centennial" onStationClick={onMapClick} />
-          <Station stationId="markham" onStationClick={onMapClick} />
+          <Station stationId="kennedy" onStationClick={onMapClick} unavailable/>
+          <Station stationId="agincourt" onStationClick={onMapClick} unavailable/>
+          <Station stationId="milliken" onStationClick={onMapClick} unavailable/>
+          <Station stationId="unionville" onStationClick={onMapClick} unavailable/>
+          <Station stationId="centennial" onStationClick={onMapClick} unavailable/>
+          <Station stationId="markham" onStationClick={onMapClick} unavailable/>
           <Station stationId="mountjoy" onStationClick={onMapClick} />
           <Station stationId="stouffville" onStationClick={onMapClick} />
-          <Station stationId="lincolnville" onStationClick={onMapClick} />
+          <Station stationId="lincolnville" onStationClick={onMapClick} unavailable/>
+        </g>
+        <g>
+          <Station stationId="barrie" onStationClick={onMapClick} unavailable/>
+          <Station stationId="milton" onStationClick={onMapClick} unavailable/>
+          <Station stationId="kitchener" onStationClick={onMapClick} unavailable/>
+        </g>
+        <g transform="rotate(-15)">
+          <Station stationId="lakeshoreeast" onStationClick={onMapClick} unavailable/>
+        </g>
+        <g transform="rotate(-45)">
+          <Station stationId="lakeshorewest" onStationClick={onMapClick} unavailable/>
         </g>
       </svg>
     </Box>
@@ -5662,14 +5673,20 @@ const Network = ({ onMapClick, className }) => (
 );
 
 export default styled(Network)`
-  .stationHighlight {
-    fill: orange;
+  .station.unavailable {
+    fill: gray;
     fill-opacity: 0.25;
     cursor: pointer;
     pointer-events: all;
   }
-  .stationHighlight:hover {
+  .station.highlight {
     fill: green;
-    fill-opacity: 0.25;
+    fill-opacity: 0.2;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  .station.highlight:hover {
+    fill: green;
+    fill-opacity: 0.3;
   }
 `;

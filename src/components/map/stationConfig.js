@@ -172,6 +172,66 @@ const stations = {
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Lincolnville',
   },
+  lakeshoreeast: {
+    code: 'LKE',
+    rect: {
+      x: 107,
+      y: 125,
+      width: 77,
+      height: 22,
+    },
+    miniSchedule: null,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table09.pdf',
+    name: 'Lakeshore East Line',
+  },
+  lakeshorewest: {
+    code: 'LKW',
+    rect: {
+      x: -95,
+      y: 160,
+      width: 105,
+      height: 10,
+    },
+    miniSchedule: null,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table01.pdf',
+    name: 'Lakeshore West Line',
+  },
+  milton: {
+    code: 'MIL',
+    rect: {
+      x: 40,
+      y: 100,
+      width: 65,
+      height: 27,
+    },
+    miniSchedule: null,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table21.pdf',
+    name: 'Milton Line',
+  },
+  barrie: {
+    code: 'BAR',
+    rect: {
+      x: 100,
+      y: 4,
+      width: 25,
+      height: 81,
+    },
+    miniSchedule: null,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table65.pdf',
+    name: 'Barrie Line',
+  },
+  kitchener: {
+    code: 'KIT',
+    rect: {
+      x: 2,
+      y: 85,
+      width: 105,
+      height: 10,
+    },
+    miniSchedule: null,
+    fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table31.pdf',
+    name: 'Kitchener Line',
+  },
 };
 
 export default stations;
