@@ -28,7 +28,7 @@ const Footer = ({ }) =>
           <Text
             m={1}
             p={1}
-            f={[ 1,2,2,2 ]}
+            f={[ 1,1,2,2 ]}
             textAlign='center'
             children='Schedules as of April 2018'
           />
@@ -41,7 +41,7 @@ const Footer = ({ }) =>
             <Text
               m={1}
               p={1}
-              f={[ 1,2,3,4 ]}
+              f={[ 1,1,2,3 ]}
               children='Made by Brendan Moore'
             />
           </BlockLink>

@@ -31,7 +31,15 @@ class Disclaimer extends Component {
               This site is not affiliated with Go Transit or Metrolinx.
               <br />
               <br />
-              Train times are static "mini schedules" not live departures and no delays or any other information is reflected here. Please see www.gotransit.com for scheduled departures and service updates.
+              Train times are static "mini schedules" not live departures and no delays or any other information is reflected here.
+              Please see&nbsp;
+              <Link
+                href="https://www.gotransit.com"
+                target="_blank"
+              >
+                gotransit.com
+              </Link>
+              &nbsp;for scheduled departures and service updates.
               <br />
               <br />
               This tool is meant only to help you plan your trip easily. 
@@ -40,15 +48,12 @@ class Disclaimer extends Component {
         </Fixed>
       )}
       <Link
-        xm={1}
-        xp={1}
-        xf={[ 1,2,2,3 ]}
         onClick={this.toggleModal}
       >
         <Text
           m={1}
           p={1}
-          f={[ 1,2,2,3 ]}
+          f={[ 1,1,2,3 ]}
         >
           Disclaimer
         </Text>
