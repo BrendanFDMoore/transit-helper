@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Banner, Heading } from 'rebass';
+import { Banner, Heading, Subhead } from 'rebass';
 import styled from "styled-components";
 
 const Header = ({ title = 'When Is My Train?', className }) =>
@@ -14,8 +14,12 @@ const Header = ({ title = 'When Is My Train?', className }) =>
     fontSize={[ 5, 6, 7, 8 ]}>
     {title}
   </Heading>
+  <Subhead
+    fontSize={[ 2, 2, 3, 4 ]}
+    children='One click access to compact station schedules'
+  />
 </Banner>
 
 export default styled(Header)`
   text-shadow: 5px 5px 5px black;
-`;;
+`;
