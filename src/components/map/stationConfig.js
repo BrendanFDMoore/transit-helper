@@ -1,7 +1,17 @@
+import orioleSchedule from 'assets/61-richmondhill/01-oriole.png';
+import oldcummerSchedule from 'assets/61-richmondhill/02-oldcummer.png';
 import langstaffSchedule from 'assets/61-richmondhill/03-langstaff.png';
 import richmondhillSchedule from 'assets/61-richmondhill/04-richmondhill.png';
+import gormleySchedule from 'assets/61-richmondhill/05-gormley.png';
+import kennedySchedule from 'assets/71-stouffville/03-kennedy.png';
+import agincourtSchedule from 'assets/71-stouffville/04-agincourt.png';
+import millikenSchedule from 'assets/71-stouffville/05-milliken.png';
+import unionvilleSchedule from 'assets/71-stouffville/06-unionville.png';
+import centennialSchedule from 'assets/71-stouffville/07-centennial.png';
+import markhamSchedule from 'assets/71-stouffville/08-markham.png';
 import mountjoySchedule from 'assets/71-stouffville/09-mountjoy.png';
 import stouffvilleSchedule from 'assets/71-stouffville/10-stouffville.png';
+import lincolnvilleSchedule from 'assets/71-stouffville/11-lincolnville.png';
 
 const stations = {
   oriole: {
@@ -12,7 +22,7 @@ const stations = {
       width: 15,
       height: 4,
     },
-    miniSchedule: null,
+    miniSchedule: orioleSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table61.pdf',
     name: 'Oriole',
   },
@@ -24,7 +34,7 @@ const stations = {
       width: 15,
       height: 6,
     },
-    miniSchedule: null,
+    miniSchedule: oldcummerSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table61.pdf',
     name: 'Old Cummer',
   },
@@ -60,7 +70,7 @@ const stations = {
       width: 15,
       height: 5,
     },
-    miniSchedule: null,
+    miniSchedule: gormleySchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table61.pdf',
     name: 'Gormley',
   },
@@ -72,7 +82,7 @@ const stations = {
       width: 13,
       height: 3.5,
     },
-    miniSchedule: null,
+    miniSchedule: kennedySchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Kennedy',
   },
@@ -84,7 +94,7 @@ const stations = {
       width: 14,
       height: 3.5,
     },
-    miniSchedule: null,
+    miniSchedule: agincourtSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Agincourt',
   },
@@ -96,7 +106,7 @@ const stations = {
       width: 13,
       height: 3.5,
     },
-    miniSchedule: null,
+    miniSchedule: millikenSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Milliken',
   },
@@ -108,7 +118,7 @@ const stations = {
       width: 14,
       height: 3.5,
     },
-    miniSchedule: null,
+    miniSchedule: unionvilleSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Unionville',
   },
@@ -120,7 +130,7 @@ const stations = {
       width: 15,
       height: 3.5,
     },
-    miniSchedule: null,
+    miniSchedule: centennialSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Centennial',
   },
@@ -132,7 +142,7 @@ const stations = {
       width: 15,
       height: 4,
     },
-    miniSchedule: null,
+    miniSchedule: markhamSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Markham',
   },
@@ -168,7 +178,7 @@ const stations = {
       width: 17,
       height: 4,
     },
-    miniSchedule: null,
+    miniSchedule: lincolnvilleSchedule,
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     name: 'Lincolnville',
   },

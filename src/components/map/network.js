@@ -5639,22 +5639,22 @@ const Network = ({ onMapClick, className }) => (
           />
         </g>
         <g>
-          <Station stationId="oriole" onStationClick={onMapClick} unavailable/>
-          <Station stationId="oldcummer" onStationClick={onMapClick} unavailable/>
+          <Station stationId="oriole" onStationClick={onMapClick} />
+          <Station stationId="oldcummer" onStationClick={onMapClick} />
           <Station stationId="langstaff" onStationClick={onMapClick} />
           <Station stationId="richmondhill" onStationClick={onMapClick} />
-          <Station stationId="gormley" onStationClick={onMapClick} unavailable/>
+          <Station stationId="gormley" onStationClick={onMapClick} />
         </g>
         <g>
-          <Station stationId="kennedy" onStationClick={onMapClick} unavailable/>
-          <Station stationId="agincourt" onStationClick={onMapClick} unavailable/>
-          <Station stationId="milliken" onStationClick={onMapClick} unavailable/>
-          <Station stationId="unionville" onStationClick={onMapClick} unavailable/>
-          <Station stationId="centennial" onStationClick={onMapClick} unavailable/>
-          <Station stationId="markham" onStationClick={onMapClick} unavailable/>
+          <Station stationId="kennedy" onStationClick={onMapClick} />
+          <Station stationId="agincourt" onStationClick={onMapClick} />
+          <Station stationId="milliken" onStationClick={onMapClick} />
+          <Station stationId="unionville" onStationClick={onMapClick} />
+          <Station stationId="centennial" onStationClick={onMapClick} />
+          <Station stationId="markham" onStationClick={onMapClick} />
           <Station stationId="mountjoy" onStationClick={onMapClick} />
           <Station stationId="stouffville" onStationClick={onMapClick} />
-          <Station stationId="lincolnville" onStationClick={onMapClick} unavailable/>
+          <Station stationId="lincolnville" onStationClick={onMapClick} />
         </g>
         <g>
           <Station stationId="barrie" onStationClick={onMapClick} unavailable/>
