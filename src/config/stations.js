@@ -706,7 +706,7 @@ const stations = [
 ];
 
 // Disable this export when running downloadpdfs script
-// export default stations;
+export default stations;
 
 // Use this export for running the downloadpdfs script
-exports.stations = stations;
+// exports.stations = stations;

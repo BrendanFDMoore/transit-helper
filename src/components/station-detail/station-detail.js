@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Fixed, Heading, Modal, Image, Flex, Box, Panel, Link, Text } from "rebass";
+import { Fixed, Heading, Modal, Image, Flex, Box, Panel, Link, Text, Close, ButtonCircle } from "rebass";
 import stationConfig from '../map/stationConfig';
-import ComingSoon from '../coming-soon/coming-soon'
+import ComingSoon from '../coming-soon/coming-soon';
 
 // This page does not work, currently.
 const getDeparturesUrl = stationCode =>
@@ -17,7 +17,6 @@ const StationDetail = ({ station, onModalClick }) => (
       onClick={onModalClick}
     />
     <Modal
-      xonClick={onModalClick}
       p={1}
       width={[0.8, 0.7, 0.6, 0.5]}
       maxHeight={'90vh'}
@@ -32,7 +31,23 @@ const StationDetail = ({ station, onModalClick }) => (
           borderBottom={0}
           borderColor='green'
           bg='black'>
-          {stationConfig[station].name}
+          <Flex alignItems='center'>
+            <Box flex={1} py={1}>
+               <Text textAlign='center'>{stationConfig[station].name}</Text>
+            </Box>
+            <Box xflex={0} xalignSelf="flex-start">
+              <ButtonCircle
+                bg='white'
+                px={1}
+                py={1}
+                color='black'
+                fontSize={1}
+                fontWeight='bold'
+                onClick={onModalClick}
+                children='X'
+              />
+            </Box>
+          </Flex>
         </Panel.Header>
         <Box p={3}>
           {
