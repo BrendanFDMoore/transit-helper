@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import { Document, Page } from 'react-pdf/dist/entry.webpack';
+import { setOptions as reactPdfSetOptions, Document, Page } from "react-pdf";
 
 import { Box, Hide, Link, Button } from 'rebass';
 
 import { stationsByName } from '../../config/stations';
 import lines from '../../config/lines';
+
+reactPdfSetOptions({
+  workerSrc: "/static/pdf.worker.min.js"
+});
 
 const pdfFilepath = station => 
   `../../assets/pdfs/${stationsByName[station].line}/${stationsByName[station].miniScheduleFilename}`;
