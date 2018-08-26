@@ -1,7 +1,11 @@
-import React, { Component } from "react";
-import { Fixed, Heading, Modal, Image, Flex, Box, Panel, Link, Text } from "rebass";
-import stationConfig from '../map/stationConfig';
-import ComingSoon from '../coming-soon/coming-soon'
+import React from 'react';
+import { Fixed, Modal, Flex, Box, Panel, Link, Text, ButtonCircle } from 'rebass';
+
+import ComingSoon from '../coming-soon/coming-soon';
+import StationSchedule from '../station-schedule/station-schedule';
+
+import { stationsByName } from '../../config/stations';
+import lines from '../../config/lines';
 
 // This page does not work, currently.
 const getDeparturesUrl = stationCode =>
@@ -17,7 +21,6 @@ const StationDetail = ({ station, onModalClick }) => (
       onClick={onModalClick}
     />
     <Modal
-      xonClick={onModalClick}
       p={1}
       width={[0.8, 0.7, 0.6, 0.5]}
       maxHeight={'90vh'}
@@ -32,26 +35,43 @@ const StationDetail = ({ station, onModalClick }) => (
           borderBottom={0}
           borderColor='green'
           bg='black'>
-          {stationConfig[station].name}
+          <Flex alignItems='center'>
+            <Box flex={1} py={1}>
+               <Text textAlign='center'>{stationsByName[station].name}</Text>
+            </Box>
+            <Box>
+              <ButtonCircle
+                bg='white'
+                px={1}
+                py={1}
+                color='black'
+                fontSize={1}
+                fontWeight='bold'
+                onClick={onModalClick}
+                children='X'
+              />
+            </Box>
+          </Flex>
         </Panel.Header>
-        <Box p={3}>
-          {
-            stationConfig[station].miniSchedule ? 
-            <Image
-              src={stationConfig[station].miniSchedule}
-            />
-            : <ComingSoon text="Mini schedule" />
-          }
-        </Box>
+        <Flex
+          justifyContent="space-around"
+        >
+          <Box p={3}>
+            {
+              stationsByName[station].miniScheduleFilename
+              ? <StationSchedule station={station} />
+              : <ComingSoon />
+            }
+          </Box>
+        </Flex>
         <Panel.Footer
           color='black'
           borderTop={0}
-          xborderColor='green'
         >
           <Flex>
             <Box flex={1}>
               <Link
-                href={stationConfig[station].fullScheduleUrl}
+                href={lines[stationsByName[station].line].fullScheduleUrl}
                 target="_blank"
               >
                 <Text textAlign='center'>Full Schedule</Text>

@@ -12,12 +12,10 @@ class Map extends Component {
   }
 
   handleMapClick = (station) => {
-    console.log('handleMapClick', station);
     this.setState({showStation: station});
   };
 
   handleModalClick = () => {
-    console.log('handleModalClick');
     this.setState({showStation: null});
   };
 

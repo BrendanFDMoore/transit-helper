@@ -15,8 +15,8 @@ const Header = ({ title = 'When Is My Train?', className }) =>
     {title}
   </Heading>
   <Subhead
-    fontSize={[ 2, 2, 3, 4 ]}
-    children='One click access to compact station schedules'
+    fontSize={[ 1, 2, 3, 4 ]}
+    children='One click access to station mini schedules for GO trains'
   />
 </Banner>
 
