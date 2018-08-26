@@ -708,5 +708,8 @@ const stations = [
 // Disable this export when running downloadpdfs script
 export default stations;
 
+export const stationsByName = stations.reduce((acc, curr) =>
+  ({...acc, [curr.name.replace(/\s+/g, '').toLowerCase()]: curr}) ,{});
+
 // Use this export for running the downloadpdfs script
 // exports.stations = stations;
