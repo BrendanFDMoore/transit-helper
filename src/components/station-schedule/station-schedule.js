@@ -10,41 +10,25 @@ const pdfFilepath = station =>
 
 const StationSchedule = ({ station }) => (
   <Box>
-    <Hide xs sm md lg>
-      <Document
-        file={pdfFilepath(station)}
-        >
+    <Document
+      file={pdfFilepath(station)}
+      >
+      <Hide xs sm md lg>
         <Page pageNumber={2} scale={1.9}/>
-      </Document>
-    </Hide>
-    <Hide xs sm md xl>
-      <Document
-        file={pdfFilepath(station)}
-        >
+      </Hide>
+      <Hide xs sm md xl>
         <Page pageNumber={2} scale={1.65}/>
-      </Document>
-    </Hide>
-    <Hide xs sm lg xl>
-      <Document
-        file={pdfFilepath(station)}
-        >
+      </Hide>
+      <Hide xs sm lg xl>
         <Page pageNumber={2} scale={1.45}/>
-      </Document>
-    </Hide>
-    <Hide xs md lg xl>
-      <Document
-        file={pdfFilepath(station)}
-        >
+      </Hide>
+      <Hide xs md lg xl>
         <Page pageNumber={2} scale={1.15}/>
-      </Document>
-    </Hide>
-    <Hide sm md lg xl>
-      <Document
-        file={pdfFilepath(station)}
-        >
+      </Hide>
+      <Hide sm md lg xl>
         <Page pageNumber={2} scale={0.80}/>
-      </Document>
-    </Hide>
+      </Hide>
+    </Document>
   </Box>
 );
 
