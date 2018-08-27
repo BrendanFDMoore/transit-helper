@@ -5671,7 +5671,19 @@ const Network = ({ onMapClick, className }) => (
         </g>
         <g>
           <Station stationId="miltonline" onStationClick={onMapClick} unavailable/>
-          <Station stationId="kitchenerline" onStationClick={onMapClick} unavailable/>
+        </g>
+        <g>
+          <Station stationId="kitchener" onStationClick={onMapClick}/>
+          <Station stationId="guelph" onStationClick={onMapClick}/>
+          <Station stationId="acton" onStationClick={onMapClick}/>
+          <Station stationId="georgetown" onStationClick={onMapClick}/>
+          <Station stationId="mountpleasant" onStationClick={onMapClick}/>
+          <Station stationId="brampton" onStationClick={onMapClick}/>
+          <Station stationId="bramalea" onStationClick={onMapClick}/>
+          <Station stationId="malton" onStationClick={onMapClick}/>
+          <Station stationId="etobicokenorth" onStationClick={onMapClick}/>
+          <Station stationId="weston" onStationClick={onMapClick}/>
+          <Station stationId="bloor" onStationClick={onMapClick}/>
         </g>
         <g transform="rotate(-15)">
           <Station stationId="lakeshoreeastline" onStationClick={onMapClick} unavailable/>

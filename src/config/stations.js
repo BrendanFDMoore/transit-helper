@@ -190,7 +190,12 @@ const stations = [
     code: 'KI',
     miniScheduleFilename: 'Kitchener-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 2,
+      y: 85,
+      width: 12,
+      height: 6,
+    },
     pages: {
       east: 2,
       west: 1,
@@ -212,7 +217,12 @@ const stations = [
     code: 'GL',
     miniScheduleFilename: 'GuelphCentral-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 17,
+      y: 88.5,
+      width: 8,
+      height: 5.5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -223,7 +233,12 @@ const stations = [
     code: 'AC',
     miniScheduleFilename: 'Acton-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 26.5,
+      y: 85,
+      width: 7.5,
+      height: 6,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -234,7 +249,12 @@ const stations = [
     code: 'GE',
     miniScheduleFilename: 'Georgetown-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 35,
+      y: 88.5,
+      width: 13,
+      height: 5.5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -245,7 +265,12 @@ const stations = [
     code: 'MO',
     miniScheduleFilename: 'MountPleasant-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 46,
+      y: 85,
+      width: 13,
+      height: 6,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -256,7 +281,12 @@ const stations = [
     code: 'BR',
     miniScheduleFilename: 'Brampton-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 60,
+      y: 88.5,
+      width: 10.5,
+      height: 5.5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -267,7 +297,12 @@ const stations = [
     code: 'BE',
     miniScheduleFilename: 'Bramalea-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 68,
+      y: 85,
+      width: 11,
+      height: 6,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -278,7 +313,12 @@ const stations = [
     code: 'MA',
     miniScheduleFilename: 'Malton-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 78,
+      y: 88.5,
+      width: 8,
+      height: 5.5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -289,7 +329,12 @@ const stations = [
     code: 'ET',
     miniScheduleFilename: 'EtobicokeNorth-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 86,
+      y: 84,
+      width: 11,
+      height: 7,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -300,7 +345,12 @@ const stations = [
     code: 'WE',
     miniScheduleFilename: 'Weston-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 97.5,
+      y: 85,
+      width: 8,
+      height: 7,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -311,7 +361,12 @@ const stations = [
     code: 'BL',
     miniScheduleFilename: 'Bloor-Union.pdf',
     line: 'kitchener',
-    rect: {},
+    rect: {
+      x: 102,
+      y: 95.5,
+      width: 11,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -859,17 +914,6 @@ const stations = [
       y: 100,
       width: 65,
       height: 27,
-    },
-  },
-  {
-    name: 'Kitchener Line',
-    line: 'kitchener',
-    code: 'KIT',
-    rect: {
-      x: 2,
-      y: 85,
-      width: 105,
-      height: 10,
     },
   },
 ];
