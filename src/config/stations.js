@@ -322,7 +322,12 @@ const stations = [
     code: 'CE',
     miniScheduleFilename: 'Centennial-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 154,
+      y: 59.5,
+      width: 15,
+      height: 3.5,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -333,7 +338,12 @@ const stations = [
     code: 'MR',
     miniScheduleFilename: 'Markham-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 158,
+      y: 55,
+      width: 15,
+      height: 4,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -344,7 +354,12 @@ const stations = [
     code: 'MJ',
     miniScheduleFilename: 'MountJoy-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 159,
+      y: 48,
+      width: 15,
+      height: 4,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -355,7 +370,12 @@ const stations = [
     code: 'ST',
     miniScheduleFilename: 'Stouffville-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 159,
+      y: 43,
+      width: 15,
+      height: 4,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -366,7 +386,12 @@ const stations = [
     code: 'LI',
     miniScheduleFilename: 'Lincolnville-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 159,
+      y: 38,
+      width: 17,
+      height: 4,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -377,7 +402,12 @@ const stations = [
     code: 'AG',
     miniScheduleFilename: 'Agincourt-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 146,
+      y: 75,
+      width: 14,
+      height: 3.5,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -388,7 +418,12 @@ const stations = [
     code: 'MK',
     miniScheduleFilename: 'Milliken-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 146,
+      y: 68.5,
+      width: 13,
+      height: 3.5,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -399,7 +434,12 @@ const stations = [
     code: 'UI',
     miniScheduleFilename: 'Unionville-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 149.5,
+      y: 63.5,
+      width: 14,
+      height: 3.5,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -410,7 +450,12 @@ const stations = [
     code: 'KE',
     miniScheduleFilename: 'Kennedy-Union.pdf',
     line: 'stouffville',
-    rect: {},
+    rect: {
+      x: 146,
+      y: 83,
+      width: 13,
+      height: 3.5,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -421,7 +466,12 @@ const stations = [
     code: 'RI',
     miniScheduleFilename: 'RichmondHill-Union.pdf',
     line: 'richmondhill',
-    rect: {},
+    rect: {
+      x: 131,
+      y: 56.5,
+      width: 15,
+      height: 5,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -432,7 +482,12 @@ const stations = [
     code: 'LA',
     miniScheduleFilename: 'Langstaff-Union.pdf',
     line: 'richmondhill',
-    rect: {},
+    rect: {
+      x: 131,
+      y: 63,
+      width: 14,
+      height: 4,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -443,7 +498,12 @@ const stations = [
     code: 'OL',
     miniScheduleFilename: 'OldCummer-Union.pdf',
     line: 'richmondhill',
-    rect: {},
+    rect: {
+      x: 126,
+      y: 69,
+      width: 15,
+      height: 6,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -454,7 +514,12 @@ const stations = [
     code: 'OR',
     miniScheduleFilename: 'Oriole-Union.pdf',
     line: 'richmondhill',
-    rect: {},
+    rect: {
+      x: 126,
+      y: 77.5,
+      width: 15,
+      height: 4,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -465,7 +530,12 @@ const stations = [
     code: 'GO',
     miniScheduleFilename: 'Gormley-Union.pdf',
     line: 'richmondhill',
-    rect: {},
+    rect: {
+      x: 135.5,
+      y: 49,
+      width: 15,
+      height: 5,
+    },
     pages: {
       south: 2,
       north: 2,
@@ -701,6 +771,61 @@ const stations = [
     pages: {
       east: 1,
       west: 2,
+    },
+  },
+  {
+    name: 'Lakeshore East',
+    line: 'lakeshoreeast',
+    code: 'LKE',
+    rect: {
+      x: 107,
+      y: 125,
+      width: 77,
+      height: 22,
+    },
+  },
+  {
+    name: 'Lakeshore West',
+    line: 'lakeshorewest',
+    code: 'LKW',
+    rect: {
+      x: -95,
+      y: 160,
+      width: 105,
+      height: 10,
+    },
+  },
+  {
+    name: 'Milton',
+    line: 'milton',
+    code: 'MIL',
+    rect: {
+      x: 40,
+      y: 100,
+      width: 65,
+      height: 27,
+    },
+  },
+  {
+    name: 'Barrie',
+    line: 'barrie',
+    code: 'BAR',
+    rect: {
+      x: 100,
+      y: 4,
+      width: 25,
+      height: 81,
+    },
+  },
+  {
+    name: 'Kitchener',
+    line: 'kitchener',
+    code: 'KIT',
+    rect: {
+      x: 2,
+      y: 85,
+      width: 105,
+      height: 10,
     },
   },
 ];
