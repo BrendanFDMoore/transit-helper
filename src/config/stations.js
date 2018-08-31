@@ -4,7 +4,12 @@ const stations = [
     code: 'ML',
     miniScheduleFilename: 'Milton-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 40,
+      y: 116.5,
+      width: 12,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -15,7 +20,12 @@ const stations = [
     code: 'LS',
     miniScheduleFilename: 'Lisgar-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 52,
+      y: 104.5,
+      width: 12,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -26,7 +36,12 @@ const stations = [
     code: 'KP',
     miniScheduleFilename: 'Kipling-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 100,
+      y: 104.5,
+      width: 11,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -37,7 +52,12 @@ const stations = [
     code: 'DI',
     miniScheduleFilename: 'Dixie-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 88,
+      y: 110,
+      width: 10,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 1,
@@ -48,7 +68,12 @@ const stations = [
     code: 'CO',
     miniScheduleFilename: 'Cooksville-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 88,
+      y: 116.5,
+      width: 15,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 1,
@@ -59,7 +84,12 @@ const stations = [
     code: 'ER',
     miniScheduleFilename: 'Erindale-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 82,
+      y: 122,
+      width: 13,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -70,7 +100,12 @@ const stations = [
     code: 'SR',
     miniScheduleFilename: 'Streetsville-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 62,
+      y: 116.5,
+      width: 18,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 2,
@@ -81,7 +116,12 @@ const stations = [
     code: 'ME',
     miniScheduleFilename: 'Meadowvale-Union.pdf',
     line: 'milton',
-    rect: {},
+    rect: {
+      x: 68,
+      y: 109.5,
+      width: 16,
+      height: 5,
+    },
     pages: {
       east: 2,
       west: 2,

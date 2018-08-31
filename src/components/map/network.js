@@ -5670,7 +5670,14 @@ const Network = ({ onMapClick, className }) => (
           <Station stationId="downsviewpark" onStationClick={onMapClick} />
         </g>
         <g>
-          <Station stationId="miltonline" onStationClick={onMapClick} unavailable/>
+          <Station stationId="milton" onStationClick={onMapClick} />
+          <Station stationId="lisgar" onStationClick={onMapClick} />
+          <Station stationId="meadowvale" onStationClick={onMapClick} />
+          <Station stationId="streetsville" onStationClick={onMapClick} />
+          <Station stationId="erindale" onStationClick={onMapClick} />
+          <Station stationId="cooksville" onStationClick={onMapClick} />
+          <Station stationId="dixie" onStationClick={onMapClick} />
+          <Station stationId="kipling" onStationClick={onMapClick} />
         </g>
         <g>
           <Station stationId="kitchener" onStationClick={onMapClick}/>
