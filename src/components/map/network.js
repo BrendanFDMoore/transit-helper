@@ -5692,11 +5692,24 @@ const Network = ({ onMapClick, className }) => (
           <Station stationId="weston" onStationClick={onMapClick}/>
           <Station stationId="bloor" onStationClick={onMapClick}/>
         </g>
+        <g>
+          <Station stationId="hamilton" onStationClick={onMapClick}/>
+          <Station stationId="westharbour" onStationClick={onMapClick}/>
+          <Station stationId="niagarafalls" onStationClick={onMapClick}/>
+          <Station stationId="stcatharines" onStationClick={onMapClick} unavailable/>
+          <Station stationId="aldershot" onStationClick={onMapClick}/>
+          <Station stationId="burlington" onStationClick={onMapClick}/>
+          <Station stationId="appleby" onStationClick={onMapClick}/>
+          <Station stationId="bronte" onStationClick={onMapClick}/>
+          <Station stationId="oakville" onStationClick={onMapClick}/>
+          <Station stationId="clarkson" onStationClick={onMapClick}/>
+          <Station stationId="portcredit" onStationClick={onMapClick}/>
+          <Station stationId="longbranch" onStationClick={onMapClick}/>
+          <Station stationId="mimico" onStationClick={onMapClick}/>
+          <Station stationId="exhibition" onStationClick={onMapClick}/>
+        </g>
         <g transform="rotate(-15)">
           <Station stationId="lakeshoreeastline" onStationClick={onMapClick} unavailable/>
-        </g>
-        <g transform="rotate(-45)">
-          <Station stationId="lakeshorewestline" onStationClick={onMapClick} unavailable/>
         </g>
       </svg>
     </Box>
