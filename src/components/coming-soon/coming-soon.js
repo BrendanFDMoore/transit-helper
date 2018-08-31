@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { Box, Text } from "rebass";
 
-const ComingSoon = ({ text }) => (
+const ComingSoon = ({ text = '' }) => (
   <Box
     px={3}
     py={4}

@@ -5657,15 +5657,39 @@ const Network = ({ onMapClick, className }) => (
           <Station stationId="lincolnville" onStationClick={onMapClick} />
         </g>
         <g>
-          <Station stationId="barrie" onStationClick={onMapClick} unavailable/>
-          <Station stationId="milton" onStationClick={onMapClick} unavailable/>
-          <Station stationId="kitchener" onStationClick={onMapClick} unavailable/>
+          <Station stationId="barriesouth" onStationClick={onMapClick} />
+          <Station stationId="allandalewaterfront" onStationClick={onMapClick} />
+          <Station stationId="bradford" onStationClick={onMapClick} />
+          <Station stationId="eastgwillimbury" onStationClick={onMapClick} />
+          <Station stationId="newmarket(trainstation)" onStationClick={onMapClick} />
+          <Station stationId="aurora" onStationClick={onMapClick} />
+          <Station stationId="kingcity" onStationClick={onMapClick} />
+          <Station stationId="maple" onStationClick={onMapClick} />
+          <Station stationId="rutherford" onStationClick={onMapClick} />
+          <Station stationId="yorkuniversity" onStationClick={onMapClick} />
+          <Station stationId="downsviewpark" onStationClick={onMapClick} />
+        </g>
+        <g>
+          <Station stationId="miltonline" onStationClick={onMapClick} unavailable/>
+        </g>
+        <g>
+          <Station stationId="kitchener" onStationClick={onMapClick}/>
+          <Station stationId="guelph" onStationClick={onMapClick}/>
+          <Station stationId="acton" onStationClick={onMapClick}/>
+          <Station stationId="georgetown" onStationClick={onMapClick}/>
+          <Station stationId="mountpleasant" onStationClick={onMapClick}/>
+          <Station stationId="brampton" onStationClick={onMapClick}/>
+          <Station stationId="bramalea" onStationClick={onMapClick}/>
+          <Station stationId="malton" onStationClick={onMapClick}/>
+          <Station stationId="etobicokenorth" onStationClick={onMapClick}/>
+          <Station stationId="weston" onStationClick={onMapClick}/>
+          <Station stationId="bloor" onStationClick={onMapClick}/>
         </g>
         <g transform="rotate(-15)">
-          <Station stationId="lakeshoreeast" onStationClick={onMapClick} unavailable/>
+          <Station stationId="lakeshoreeastline" onStationClick={onMapClick} unavailable/>
         </g>
         <g transform="rotate(-45)">
-          <Station stationId="lakeshorewest" onStationClick={onMapClick} unavailable/>
+          <Station stationId="lakeshorewestline" onStationClick={onMapClick} unavailable/>
         </g>
       </svg>
     </Box>

@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { setOptions as reactPdfSetOptions, Document, Page } from "react-pdf";
+import { Box, Hide, Button } from 'rebass';
+import styled from "styled-components";
 
-import { Box, Hide, Link, Button } from 'rebass';
+import LoadingDots from '../loading/loading';
 
 import { stationsByName } from '../../config/stations';
 import lines from '../../config/lines';
+
+const Loading = styled(LoadingDots)`
+  min-height: 200px;
+`;
 
 reactPdfSetOptions({
   workerSrc: "/static/pdf.worker.min.js"
@@ -27,7 +33,14 @@ const schedulePages = station => {
 class StationSchedule extends Component {
   constructor() {
     super();
-    this.state = { currentPage: 2 };
+    this.state = {
+      currentPage: 2,
+      isLoaded: false,
+    };
+  }
+
+  onDocumentLoadSuccess = () => {
+    this.setState({ isLoaded: true });
   }
 
   setPage = page =>
@@ -35,7 +48,7 @@ class StationSchedule extends Component {
 
   render() {
     const { station } = this.props;
-    const { currentPage } = this.state;
+    const { currentPage, isLoaded } = this.state;
     return (
       <Box>
         <Box>
@@ -52,22 +65,29 @@ class StationSchedule extends Component {
             )
           }
         </Box>
+        { 
+          !isLoaded &&
+          <Box py={4}>
+            <Loading />
+          </Box>
+        }
         <Document
           file={pdfFilepath(station)}
-          >
-          <Hide xs sm md lg>
+          onLoadSuccess={this.onDocumentLoadSuccess}
+        >
+          <Hide key="xl" xs sm md lg>
             <Page pageNumber={currentPage} scale={1.9}/>
           </Hide>
-          <Hide xs sm md xl>
+          <Hide key="lg" xs sm md xl>
             <Page pageNumber={currentPage} scale={1.65}/>
           </Hide>
-          <Hide xs sm lg xl>
+          <Hide key="md" xs sm lg xl>
             <Page pageNumber={currentPage} scale={1.45}/>
           </Hide>
-          <Hide xs md lg xl>
+          <Hide key="sm" xs md lg xl>
             <Page pageNumber={currentPage} scale={1.15}/>
           </Hide>
-          <Hide sm md lg xl>
+          <Hide key="xs" sm md lg xl>
             <Page pageNumber={2} scale={0.80}/>
           </Hide>
         </Document>
