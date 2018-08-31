@@ -2,6 +2,7 @@ import React from "react";
 import { stationsByName } from '../../config/stations';
 
 const Station = ({ stationId, onStationClick, unavailable = false }) => (
+  stationsByName[stationId] && stationsByName[stationId].rect &&
   <rect
     id={`station-${stationId}`}
     x={stationsByName[stationId].rect.x}
