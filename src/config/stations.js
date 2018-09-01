@@ -946,7 +946,12 @@ const stations = [
     code: 'DA',
     miniScheduleFilename: 'Danforth-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 140.5,
+      y: 102.5,
+      width: 13,
+      height: 5,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -957,7 +962,12 @@ const stations = [
     code: 'SC',
     miniScheduleFilename: 'Scarborough-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 145.5,
+      y: 98,
+      width: 17,
+      height: 4,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -968,7 +978,12 @@ const stations = [
     code: 'EG',
     miniScheduleFilename: 'Eglinton-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 151,
+      y: 93.5,
+      width: 12,
+      height: 4,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -979,7 +994,12 @@ const stations = [
     code: 'GU',
     miniScheduleFilename: 'Guildwood-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 155.5,
+      y: 89.5,
+      width: 14,
+      height: 3.5,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -991,7 +1011,12 @@ const stations = [
     // typo in filename is deliberate to match GO transit typo...
     miniScheduleFilename: 'RogueHill-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 159.5,
+      y: 85,
+      width: 14,
+      height: 4,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -1002,7 +1027,12 @@ const stations = [
     code: 'PIN',
     miniScheduleFilename: 'Pickering-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 174.5,
+      y: 82,
+      width: 10,
+      height: 6,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -1013,7 +1043,12 @@ const stations = [
     code: 'AJ',
     miniScheduleFilename: 'Ajax-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 190.5,
+      y: 84.5,
+      width: 5,
+      height: 6,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -1024,7 +1059,12 @@ const stations = [
     code: 'WH',
     miniScheduleFilename: 'Whitby-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 196,
+      y: 82,
+      width: 7,
+      height: 6,
+    },
     pages: {
       east: 1,
       west: 2,
@@ -1035,7 +1075,12 @@ const stations = [
     code: 'OS',
     miniScheduleFilename: 'Oshawa-Union-Exhibition.pdf',
     line: 'lakeshoreeast',
-    rect: {},
+    rect: {
+      x: 205,
+      y: 84.5,
+      width: 10,
+      height: 6,
+    },
     pages: {
       east: 1,
       west: 2,

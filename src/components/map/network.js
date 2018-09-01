@@ -5708,8 +5708,16 @@ const Network = ({ onMapClick, className }) => (
           <Station stationId="mimico" onStationClick={onMapClick}/>
           <Station stationId="exhibition" onStationClick={onMapClick}/>
         </g>
-        <g transform="rotate(-15)">
-          <Station stationId="lakeshoreeastline" onStationClick={onMapClick} unavailable/>
+        <g>
+          <Station stationId="oshawa" onStationClick={onMapClick}/>
+          <Station stationId="whitby" onStationClick={onMapClick}/>
+          <Station stationId="ajax" onStationClick={onMapClick}/>
+          <Station stationId="pickering" onStationClick={onMapClick}/>
+          <Station stationId="rougehill" onStationClick={onMapClick}/>
+          <Station stationId="guildwood" onStationClick={onMapClick}/>
+          <Station stationId="eglinton" onStationClick={onMapClick}/>
+          <Station stationId="scarborough" onStationClick={onMapClick}/>
+          <Station stationId="danforth" onStationClick={onMapClick}/>
         </g>
       </svg>
     </Box>
