@@ -5670,7 +5670,14 @@ const Network = ({ onMapClick, className }) => (
           <Station stationId="downsviewpark" onStationClick={onMapClick} />
         </g>
         <g>
-          <Station stationId="miltonline" onStationClick={onMapClick} unavailable/>
+          <Station stationId="milton" onStationClick={onMapClick} />
+          <Station stationId="lisgar" onStationClick={onMapClick} />
+          <Station stationId="meadowvale" onStationClick={onMapClick} />
+          <Station stationId="streetsville" onStationClick={onMapClick} />
+          <Station stationId="erindale" onStationClick={onMapClick} />
+          <Station stationId="cooksville" onStationClick={onMapClick} />
+          <Station stationId="dixie" onStationClick={onMapClick} />
+          <Station stationId="kipling" onStationClick={onMapClick} />
         </g>
         <g>
           <Station stationId="kitchener" onStationClick={onMapClick}/>
@@ -5685,11 +5692,32 @@ const Network = ({ onMapClick, className }) => (
           <Station stationId="weston" onStationClick={onMapClick}/>
           <Station stationId="bloor" onStationClick={onMapClick}/>
         </g>
-        <g transform="rotate(-15)">
-          <Station stationId="lakeshoreeastline" onStationClick={onMapClick} unavailable/>
+        <g>
+          <Station stationId="hamilton" onStationClick={onMapClick}/>
+          <Station stationId="westharbour" onStationClick={onMapClick}/>
+          <Station stationId="niagarafalls" onStationClick={onMapClick}/>
+          <Station stationId="stcatharines" onStationClick={onMapClick} unavailable/>
+          <Station stationId="aldershot" onStationClick={onMapClick}/>
+          <Station stationId="burlington" onStationClick={onMapClick}/>
+          <Station stationId="appleby" onStationClick={onMapClick}/>
+          <Station stationId="bronte" onStationClick={onMapClick}/>
+          <Station stationId="oakville" onStationClick={onMapClick}/>
+          <Station stationId="clarkson" onStationClick={onMapClick}/>
+          <Station stationId="portcredit" onStationClick={onMapClick}/>
+          <Station stationId="longbranch" onStationClick={onMapClick}/>
+          <Station stationId="mimico" onStationClick={onMapClick}/>
+          <Station stationId="exhibition" onStationClick={onMapClick}/>
         </g>
-        <g transform="rotate(-45)">
-          <Station stationId="lakeshorewestline" onStationClick={onMapClick} unavailable/>
+        <g>
+          <Station stationId="oshawa" onStationClick={onMapClick}/>
+          <Station stationId="whitby" onStationClick={onMapClick}/>
+          <Station stationId="ajax" onStationClick={onMapClick}/>
+          <Station stationId="pickering" onStationClick={onMapClick}/>
+          <Station stationId="rougehill" onStationClick={onMapClick}/>
+          <Station stationId="guildwood" onStationClick={onMapClick}/>
+          <Station stationId="eglinton" onStationClick={onMapClick}/>
+          <Station stationId="scarborough" onStationClick={onMapClick}/>
+          <Station stationId="danforth" onStationClick={onMapClick}/>
         </g>
       </svg>
     </Box>
