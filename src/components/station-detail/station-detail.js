@@ -22,7 +22,7 @@ const StationDetail = ({ station, onModalClick }) => (
     />
     <Modal
       p={1}
-      width={[0.8, 0.7, 0.6, 0.5]}
+      width={[0.9, 0.8, 0.7, 0.6]}
       maxHeight={'90vh'}
     >
       <Panel
@@ -56,7 +56,7 @@ const StationDetail = ({ station, onModalClick }) => (
         <Flex
           justifyContent="space-around"
         >
-          <Box p={3}>
+          <Box p={2}>
             {
               stationsByName[station].miniScheduleFilename
               ? <StationSchedule station={station} />
@@ -72,9 +72,9 @@ const StationDetail = ({ station, onModalClick }) => (
             <Box flex={1}>
               <Link
                 href={lines[stationsByName[station].line].fullScheduleUrl}
-                target="_blank"
+                download={true}
               >
-                <Text textAlign='center'>Full Schedule</Text>
+                <Text textAlign='center'>Full {lines[stationsByName[station].line].name} Line Schedule</Text>
               </Link>
             </Box>
             {/* Note: these station links do not currently resolve as expected. */}
