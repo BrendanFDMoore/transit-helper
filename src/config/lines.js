@@ -1,5 +1,6 @@
 const lines = {
   richmondhill: {
+    name: 'Richmond Hill',
     lineNumber: '61',
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table61.pdf',
     majorDirections: {
@@ -8,6 +9,7 @@ const lines = {
     },
   },
   stouffville: {
+    name: 'Stouffville',
     lineNumber: '71',
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table71.pdf',
     majorDirections: {
@@ -16,6 +18,7 @@ const lines = {
     },
   },
   barrie: {
+    name: 'Barrie',
     lineNumber: '65',
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table65.pdf',
     majorDirections: {
@@ -24,6 +27,7 @@ const lines = {
     },
   },
   milton: {
+    name: 'Milton',
     lineNumber: '21',
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table21.pdf',
     majorDirections: {
@@ -32,6 +36,7 @@ const lines = {
     },
   },
   kitchener: {
+    name: 'Kitchener',
     lineNumber: '31',
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table31.pdf',
     majorDirections: {
@@ -40,6 +45,7 @@ const lines = {
     },
   },
   lakeshorewest: {
+    name: 'Lakeshore West',
     lineNumber: '01',
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table01.pdf',
     majorDirections: {
@@ -48,6 +54,7 @@ const lines = {
     },
   },
   lakeshoreeast: {
+    name: 'Lakeshore East',
     lineNumber: '09',
     fullScheduleUrl: 'https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/FullSchedules/Table09.pdf',
     majorDirections: {

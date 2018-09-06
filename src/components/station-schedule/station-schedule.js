@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import { setOptions as reactPdfSetOptions, Document, Page } from "react-pdf";
-import { Box, Hide, Button } from 'rebass';
+import { Box, Hide, Button, Link } from 'rebass';
 import styled from "styled-components";
 
 import LoadingDots from '../loading/loading';
 
 import { stationsByName } from '../../config/stations';
 import lines from '../../config/lines';
+import directions from '../../config/directions';
 
 const Loading = styled(LoadingDots)`
   min-height: 200px;
 `;
 
 reactPdfSetOptions({
-  workerSrc: "/static/pdf.worker.min.js"
+  workerSrc: "pdf.worker.min.js"
 });
 
 const pdfFilepath = station => 
@@ -60,10 +61,23 @@ class StationSchedule extends Component {
                 my={1}
                 onClick={this.setPage(p.page)}
               >
-                { p.direction }
+                { directions[p.direction].name }
               </Button>
             )
           }
+          <Link
+            href={pdfFilepath(station)}
+            download={true}
+          >
+            <Button
+              key='download'
+              bg='green'
+              mx={2}
+              my={1}
+            >
+              {'Download PDF'}
+            </Button>
+          </Link>
         </Box>
         { 
           !isLoaded &&
@@ -76,19 +90,19 @@ class StationSchedule extends Component {
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
           <Hide key="xl" xs sm md lg>
-            <Page pageNumber={currentPage} scale={1.9}/>
+            <Page pageNumber={currentPage} width={700}/>
           </Hide>
           <Hide key="lg" xs sm md xl>
-            <Page pageNumber={currentPage} scale={1.65}/>
+            <Page pageNumber={currentPage} width={600}/>
           </Hide>
           <Hide key="md" xs sm lg xl>
-            <Page pageNumber={currentPage} scale={1.45}/>
+            <Page pageNumber={currentPage} width={500}/>
           </Hide>
           <Hide key="sm" xs md lg xl>
-            <Page pageNumber={currentPage} scale={1.15}/>
+            <Page pageNumber={currentPage} width={400}/>
           </Hide>
           <Hide key="xs" sm md lg xl>
-            <Page pageNumber={2} scale={0.80}/>
+            <Page pageNumber={2} width={300}/>
           </Hide>
         </Document>
       </Box>
