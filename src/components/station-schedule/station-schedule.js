@@ -13,7 +13,7 @@ const Loading = styled(LoadingDots)`
 `;
 
 reactPdfSetOptions({
-  workerSrc: "/static/pdf.worker.min.js"
+  workerSrc: "pdf.worker.min.js"
 });
 
 const pdfFilepath = station => 
