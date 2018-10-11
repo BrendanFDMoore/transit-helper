@@ -15,14 +15,14 @@ See it online at [WhenIsMyTrain.info](https://whenismytrain.info).
 
 ## TODO
 
-* Load remaining stations
-* Better images
+* Figure out PDF document/page container scaling
 * Parsing timetables as data for better display format & accessibility
 * Set up mailing list for update notifications by line or station
 * Bookmarkable station pages with more details (transit operator site breaks on inbound links...)
 * Live departures if API is available
 * Other cities
 * Add analytics to see how users are interacting
-* Submit an issue if there's something you'd find helpful!
 * Add tests & CI... 😬
 * Auto-deploy on `master` branch changes
+* Automatically show am/pm rush hour direction based on local time
+* Submit an issue if there's something you'd find helpful!
