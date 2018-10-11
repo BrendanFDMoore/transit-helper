@@ -32,10 +32,19 @@ const schedulePages = station => {
 };
 
 class StationSchedule extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    const { station } =               props;
+    const directions = lines[stationsByName[station].line].majorDirections;
+    const now = new Date();
+    let firstPage = 2;
+    if ( now.getHours() <= 11 ) {
+      firstPage = stationsByName[station].pages[directions.am];
+    } else {
+      firstPage = stationsByName[station].pages[directions.pm];
+    }
     this.state = {
-      currentPage: 2,
+      currentPage: firstPage,
       isLoaded: false,
     };
   }
@@ -102,7 +111,7 @@ class StationSchedule extends Component {
             <Page pageNumber={currentPage} width={400}/>
           </Hide>
           <Hide key="xs" sm md lg xl>
-            <Page pageNumber={2} width={300}/>
+            <Page pageNumber={currentPage} width={300}/>
           </Hide>
         </Document>
       </Box>
