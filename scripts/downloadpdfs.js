@@ -24,15 +24,17 @@ var download = function(url, dest, cb) {
   });
 };
 
-// Note, this may change over time. Will need to update it form GO site.
+// Note, this may change over time. Will need to update it from GO site.
 const miniPdfUrl = file =>
-  `https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/MiniSchedules/BP04180618/${file}`;
+  `https://www.gotransit.com/static_files/gotransit/assets/pdf/TripPlanning/MiniSchedules/BP0918/${file}`;
+
+// Previous files/dates:
+// BP04180618 - April/June 2018
 
 stations
-// For testing, only one station
-.filter(s => s.name === 'Markham')
 .forEach( stn => {
-  const downloadDirectory = `${__dirname}/../assets/pdfs/${stn.line}`;
+  console.log('Downloading for:', stn.name, `(${stn.line})`, miniPdfUrl(stn.miniScheduleFilename));
+  const downloadDirectory = `${__dirname}/../public/assets/pdfs/${stn.line}`;
 
   if (!fs.existsSync(downloadDirectory)){
       fs.mkdirSync(downloadDirectory);

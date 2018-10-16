@@ -30,7 +30,7 @@ const Footer = ({ }) =>
             p={1}
             f={[ 1,1,2,2 ]}
             textAlign='center'
-            children='Schedules as of April 2018'
+            children='Schedules as of Sept 2018'
           />
         </Box>
         <Box>
