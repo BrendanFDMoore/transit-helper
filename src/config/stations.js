@@ -1086,39 +1086,6 @@ const stations = [
       west: 2,
     },
   },
-  {
-    name: 'Lakeshore East Line',
-    line: 'lakeshoreeast',
-    code: 'LKE',
-    rect: {
-      x: 107,
-      y: 125,
-      width: 77,
-      height: 22,
-    },
-  },
-  {
-    name: 'Lakeshore West Line',
-    line: 'lakeshorewest',
-    code: 'LKW',
-    rect: {
-      x: -95,
-      y: 160,
-      width: 105,
-      height: 10,
-    },
-  },
-  {
-    name: 'Milton Line',
-    line: 'milton',
-    code: 'MIL',
-    rect: {
-      x: 40,
-      y: 100,
-      width: 65,
-      height: 27,
-    },
-  },
 ];
 
 // Disable this export when running downloadpdfs script
