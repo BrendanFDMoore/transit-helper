@@ -306,13 +306,17 @@ const stations = [
   {
     name: 'St Catharines',
     code: 'SCTH',
-    miniScheduleFilename: null,
+    miniScheduleFilename: 'StCatharinesFairviewMall-Union.pdf',
     line: 'lakeshorewest',
     rect: {
       x: 118,
       y: 176.5,
       width: 14,
       height: 6,
+    },
+    pages: {
+      east: 2,
+      west: 2,
     },
   },
   {
