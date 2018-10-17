@@ -5696,7 +5696,7 @@ const Network = ({ onMapClick, className }) => (
           <Station stationId="hamilton" onStationClick={onMapClick}/>
           <Station stationId="westharbour" onStationClick={onMapClick}/>
           <Station stationId="niagarafalls" onStationClick={onMapClick}/>
-          <Station stationId="stcatharines" onStationClick={onMapClick} unavailable/>
+          <Station stationId="stcatharines" onStationClick={onMapClick}/>
           <Station stationId="aldershot" onStationClick={onMapClick}/>
           <Station stationId="burlington" onStationClick={onMapClick}/>
           <Station stationId="appleby" onStationClick={onMapClick}/>
